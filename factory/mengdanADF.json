@@ -1,0 +1,15 @@
+{
+	"name": "mengdanADF",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned,UserAssigned",
+		"principalId": "f0850fc7-2dbd-4a9d-a2e3-0a70346ebd2b",
+		"tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+		"userAssignedIdentities": {
+			"/subscriptions/f37aad11-0ca1-4f32-be40-0ffb4e8e147b/resourcegroups/mengdanRG/providers/Microsoft.ManagedIdentity/userAssignedIdentities/mdUAMI": {
+				"clientId": "0e0ea73f-8f5f-43c9-8737-7d75a4ce89c7",
+				"principalId": "a30ab907-6fc6-472d-9be2-e64e87e8d135"
+			}
+		}
+	}
+}

@@ -1,0 +1,35 @@
+{
+	"name": "pipeline2",
+	"properties": {
+		"activities": [
+			{
+				"name": "Notebook1",
+				"type": "DatabricksNotebook",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Users/mengdliu@microsoft.com/test2",
+					"libraries": [
+						{
+							"jar": "dbfs:/mnt/adlsgen2/spark-mssql-connector_2.11-1.0.0.jar"
+						}
+					]
+				},
+				"linkedServiceName": {
+					"referenceName": "AzureDatabricks7",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2020-07-22T05:57:28Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
